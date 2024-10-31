@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-----Cores-----*/
+:root{
+    --white: #ffffff;
+    --black: #0B0B0B;
+    --gray: #191919;
+    --lightgray: #2A2A2A;
+    --orange: #FF6200;
+    --fonte: 'Rubik Wet Paint';
+}
+
+body{
+    background-color: var(--gray);
+}
+
+/*-----Menu-----*/
+.menu{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+.menu h3{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--fonte);
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    transition-duration: 0.5s;
+}
+
+.menu a:hover{
+    color: var(--orange);
+}
+
+/*-----Menu_Hamburguer-----*/
+.menu button{
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+/*-----Banner-----*/
+.banner{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 90px;
+    color: var(--orange);
+    font-weight: 400;
+    font-family: var(--fonte);
+}
+
+#parallax{
+    background-image: url(./Img/banner_halloween.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*-----Principal-----*/
+.principal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.principal img{
+    width: 40%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+}
+
+/*-----Titulo-----*/
+.titulo{
+    width: 50%;
+    padding: 10px 40px;
+    color: var(--orange);
+}
+
+.titulo h2{
+    font-size: 50px;
+    font-family: var(--fonte);
+    margin-bottom: 10px;
+}
+
+.titulo p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*-----Copyright-----*/
+.copyright{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+    color: var(--orange);
+}
