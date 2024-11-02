@@ -62,120 +62,80 @@ body{
     display: none;
 }
 
-/*-----Banner-----*/
-.banner{
+/*-----Titulo-----*/
+.titulo{
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    color: var(--orange);
 }
 
-.banner h1{
+.titulo h1{
     font-size: 90px;
-    color: var(--orange);
     font-weight: 400;
     font-family: var(--fonte);
-    text-shadow: 0px 5px 7px var(--black);
 }
 
-#parallax{
-    background-image: url(./Img/banner_halloween.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+.titulo p{
+    font-size: 20px;
+    margin-top: 10px;
 }
 
-/*-----Cards-----*/
-.cards{
+/*-----Doces-----*/
+.doces{
     width: 100%;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 10px;
 }
 
-.card{
-    width: 35%;
-    padding: 10px;
+.doce{
+    width: 30%;
+    padding: 7px;
     border-radius: 5px;
     background-color: var(--black);
 }
 
-.card img{
+.doce img{
     width: 100%;
     height: 40vh;
+    object-fit: cover;
 }
 
-.card h3{
+.doce h4{
     color: var(--orange);
-    font-family: var(--fonte);
-    font-size: 40px;
     text-align: center;
+    margin-bottom: 5px;
+    font-size: 17px;
     font-weight: 400;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-family: var(--fonte);
 }
 
-.card button{
+.doce p{
+    color: var(--white);
+    font-size: 25px;
+    text-align: center;
+}
+
+.doce button{
     width: 100%;
     height: 50px;
     border: none;
-    border-radius: 5px;
+    color: var(--white);
+    font-size: 20px;
     background-color: var(--orange);
     cursor: pointer;
     transition-duration: 0.5s;
 }
 
-.card button:hover{
+.doce button:hover{
     background-color: var(--dark_orange);
-}
-
-.card a{
-    color: var(--white);
-    text-decoration: none;
-    font-size: 20px;
-}
-
-/*-----Origem-----*/
-.origem{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carta{
-    width: 70%;
-    height: 70vh;
-    padding: 10px;
-    border-radius: 10px;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./Img/carta.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0px 10px 20px 0px var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: var(--white);
-    border: 1px solid var(--orange);
-}
-
-.carta h1{
-    font-family: var(--fonte);
-    font-weight: 400;
-    font-size: 50px;
-}
-
-.carta p{
-    width: 70%;
-    font-size: 20px;
-    margin-top: 10px;
-    text-align: justify;
 }
 
 /*-----Copyright-----*/
@@ -232,28 +192,13 @@ body{
         margin-bottom: 10px;
     }
 
-    .banner{
-        height: 35vh;
-    }
-
-    .banner h1{
-        font-size: 43px;
-    }
-
-    .card{
+    .titulo p{
         width: 90%;
+        text-align: center;
+        font-size: 17px;
     }
 
-    .carta{
+    .doce{
         width: 90%;
-    }
-
-    .carta h1{
-        font-size: 30px;
-    }
-
-    .carta p{
-        width: 100%;
-        margin-top: 15px;
     }
 }

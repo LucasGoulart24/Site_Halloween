@@ -5,33 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Img/icone.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Halloween</title>
 </head>
 <body>
     <nav class="menu">
         <h3>Halloween</h3>
-        <ul>
+        <ul id="menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Origem</a></li>
-            <li><a href="#">Historias</a></li>
-            <li><a href="#">Receitas</a></li>
+            <li><a href="./Pages/filmes.html">Filmes</a></li>
+            <li><a href="./Pages/doces.html">Doces</a></li>
         </ul>
-        <button><span class="material-symbols-outlined">menu</span></button>
+        <button id="menuButton"><span class="material-symbols-outlined">menu</span></button>
     </nav>
     <header class="banner" id="parallax">
         <h1>Feliz Dia das Bruxas</h1>
     </header>
-    <div class="principal">
-        <div class="titulo">
-            <h2>Bem vindo</h2>
-            <p>Você sabe que dia é hoje? é dia 31 de Outubro, o Dia das Bruxas, você gosta de se fantaciar, fazer lanternas de abóboras, contar histórias de terror, pedir doces ou travessuras,então você veio ao lugar certo, temos fantasias, infeites,máscaras e receitas de doces e salgados para o Halloween. Nós tambem temos umas boas histórias de Halloween para você ler e contar para seu amigos</p>
+    <div class="cards">
+        <div class="card">
+            <img src="./Img/cinema.jpg" alt="imagem de abobora">
+            <h3>Filmes</h3>
+            <button><a href="./Pages/filmes.html">Visitar</a></button>
         </div>
-        <img src="./Img/abobora.jpg" alt="Imagem de abobora">
+        <div class="card">
+            <img src="./Img/doce.jpg" alt="imagem de abobora">
+            <h3>Doces</h3>
+            <button><a href="./Pages/doces.html">Visitar</a></button>
+        </div>
+    </div>
+    <div class="origem">
+        <div class="carta">
+            <h1>Origem do Dia das Bruxas</h1>
+            <p>A origem do Halloween se deu pela fusão do festival celta com os valores do cristianismo, entre os séculos XIV e XVIII, durante a colonização das Ilhas Britânicas, chamado de "Samhaim", a festa marcava o fim do verão e possuía um significado místico.</p>
+        </div>
     </div>
     <div class="copyright">
         <h4>&copy;2024 - Halloween</h4>
-        <div class="redes"></div>
+        <div class="redes">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bx-envelope'></i>
+        </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
